@@ -14,8 +14,6 @@ const RandomUsers = () => {
     const fetchUsers = async () => {
         setUsers([]);
         setHasMore(false);
-        setNat('');
-        setGender('');
         if (numUsers <= 0) return;
         setLoading(true);
         try {
