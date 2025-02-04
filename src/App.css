@@ -4,3 +4,57 @@
 .random-user-img {
     border-radius: 50%;
 }
+
+.infinite-scroll-component {
+  scrollbar-width: none;
+}
+
+.card-container {
+  width: 33%;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+  width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+  .card-container .card-content {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+.card-content {
+  margin: 10px;
+  padding: 20px;
+  background: #FDFEFF;
+  transition: background .6s ease;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
+}
+
+.card-content .random-user-img {
+  width: 124px;
+  height: 124px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  border-radius: 100%;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, .2);
+}
+
+.card-content .name {
+  color: #2D354A;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+}
